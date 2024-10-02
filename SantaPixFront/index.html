@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SantaPix</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="container__gerar__pix">
+            <h1>Crie seu pix</h1>
+            <form action="." class="form">
+                <input type="text" placeholder="Valor em R$:" required class="value">
+                <input type="text" placeholder="Descrição do pix" class="description">
+                <button class="generate-pix" type="submit" disabled>Gerar Pix</button>
+            </form>
+        </section>
+        <section class="container__qrcode">
+            <div class="qr-code"></div>
+            <button class="new__qr">
+                Gerar novo QR Code
+            </button>
+        </section>
+        <span class="paid"></span>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

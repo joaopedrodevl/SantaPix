@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - BASE_URL=https://trust-pix.santander.com.br
+      - API_URL=https://trust-pix.santander.com.br/api/v1
+      - CLIENT_ID="COLOQUE AQUI O SEU CLIENT_ID"
+      - CLIENT_SECRET="COLOQUE AQUI O SEU CLIENT_SECRET"
+      - PIX_KEY="COLOQUE AQUI A SUA PIX_KEY"
+      - PIX_DURATION="COLOQUE AQUI A DURAÇÃO DO PIX EM SEGUNDOS"
+    
